@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Backup PhD
+Comment=Copy all the PhD files from Dropbox to Seagate BackupPlus external hardrive
+Exec=/home/alek/Scripts/backupPhD.sh
+Icon=/home/alek/Scripts/defaultIcon.png
+Terminal=true
+Type=Application
+Categories=Utility;Application;
