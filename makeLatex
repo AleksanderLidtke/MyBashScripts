@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e # Any subsequent commands which fail will cause the shell script to exit immediately.
+
+args=("$@") # Get the command line arguments.
+echo "Compilng Latex file ${args[0]}."
+
+pdflatex ${args[0]}.tex # Compile the file.
+bibtex ${args[0]}.aux # Sort out the references.
+pdflatex ${args[0]}.tex # Compile the file two more times.
+pdflatex ${args[0]}.tex
