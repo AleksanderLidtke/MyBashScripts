@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e # Any subsequent commands which fail will cause the shell script to exit immediately.
 
-SRC='/home/alek/Dropbox/PhD/'
-DEST='/media/alek/PhD' #'/media/alek/Seagate Backup Plus Drive/PhD'
+SRC='/home/alek/Pictures/Japan/'
+DEST='/media/alek/UbuntuData/Japan'
 
 if [ ! -w "$DEST" ]; then # Check if the destination folder is writable.
 	zenity --error --text="Tried to copy from:\n $SRC \nto:\n $DEST\nbut the destination folder isn't writable!"

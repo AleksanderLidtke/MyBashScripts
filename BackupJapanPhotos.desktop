@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Backup Japan Photos
+Comment=Copy all the photos I took in Japan to Seagate BackupPlus external hardrive
+Exec=/home/alek/Scripts/backupJapanPhotos.sh
+Icon=/home/alek/Scripts/JapanLogo.png
+Terminal=true
+Type=Application
+Categories=Utility;Application;

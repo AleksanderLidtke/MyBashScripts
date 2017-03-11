@@ -1,0 +1,8 @@
+#!/bin/bash
+
+piHome="pi@unnamedOwl:/home/pi"
+
+if [ `stat -fc%t:%T ~/SharedFolders/unnamedOwl` == `stat -fc%t:%T ~/SharedFolders/unnamedOwl/..` ]; then
+	sshfs -o nonempty $piHome ~/SharedFolders/unnamedOwl
+	echo "piHome mounted."
+fi
